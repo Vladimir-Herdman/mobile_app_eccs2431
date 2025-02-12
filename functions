@@ -1,0 +1,50 @@
+/**
+ * Some functions for the app
+ */
+
+fun main() {
+    //Test Case:
+    val dia1 = 2.0;
+    val dia2 = 4.0;
+    val price1 = 5.00;
+    val price2 = 10.00;
+    
+   	val area1 = calcArea(dia1);
+    val area2 = calcArea(dia2);
+    
+    val ppsi1 = calcPricePerSqIn(area1, price1);
+    val ppsi2 = calcPricePerSqIn(area2, price2);
+    
+    println(betterBuy(ppsi1, ppsi2));
+    
+    println(ppsi1);
+    println(ppsi2);
+}
+
+fun calcArea(diameter: Double): Double {
+    val radius = diameter / 2;
+    val area = (radius * radius) * 3.141592;
+    return area;
+}
+
+fun calcPricePerSqIn(area: Double, price: Double): Double{
+    val pricePerSqIn = price / area;
+    return pricePerSqIn;
+}
+
+fun betterBuy(ppsi1: Double, ppsi2: Double): String{
+    val str: String;
+	//Pizza 2 is better
+    if(ppsi1 > ppsi2){
+       str = "Pizza 2 is the better buy.";
+    }
+    //Pizza 1 is better
+    else if(ppsi1 < ppsi2){
+        str = "Pizza 1 is the better buy.";
+    }
+    //They are the same
+    else{
+		str = "The pizzas are equally good deals.";
+    }
+    return str;
+}

@@ -85,9 +85,9 @@ class MainActivity : AppCompatActivity() {
             }
 
             // Set which pizza is cheaper as final choice
-            if (finalPriceA > finalPriceB) {
+            if (finalPriceA < finalPriceB) {
                 finalChoice.text = "Choose A!"
-            } else if (finalPriceB > finalPriceA) {
+            } else if (finalPriceB < finalPriceA) {
                 finalChoice.text = "Choose B!"
             } else if (finalPriceA == finalPriceB) {
                 if (sizeA > sizeB) {

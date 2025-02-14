@@ -59,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
                 finalPriceA = priceA * inchesSquaredA
                 sizeA = inchesSquaredA
-                resultTextA.text = "Final Price B: \$${String.format("%.2f", finalPriceA)}"
+                resultTextA.text = "Final Price A: \$${String.format("%.2f", finalPriceA)}"
             } else {
                 resultTextA.text = "Please enter valid inputs."
             }

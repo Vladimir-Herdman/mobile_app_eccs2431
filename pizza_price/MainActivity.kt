@@ -1,3 +1,12 @@
+/**  Contributors
+ *
+ * - Jake Hammond
+ * - Macaden Murrell
+ * - Brian Bizon
+ * - Vladimir Herdman
+ *
+ */
+
 package com.zybooks.pizzapricecalc
 
 import android.os.Bundle

@@ -25,3 +25,7 @@ The .gradle/, build/, .idea/, and local.properties/ folders were also gitignored
 total upload.
 
 ## Running application
+
+
+https://github.com/user-attachments/assets/f966bed9-d9ae-4b39-883c-3dec4673c31b
+

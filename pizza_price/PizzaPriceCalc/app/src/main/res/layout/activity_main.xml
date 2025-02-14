@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+   <TextView
+       android:id="@+id/pizzaA"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+       android:layout_alignParentTop="true"
+       android:text="Pizza A"
+       android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/diameterInputA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter diameter in inches"
+        android:layout_below="@+id/pizzaA"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/priceInputA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter price per square inch"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/recInputA"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/recInputA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter width of rectangle"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/diameterInputA"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/shapeRadioGroupA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/priceInputA"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioCircleA"
+            android:layout_width="wrap_content"
+            android:checked="true"
+            android:layout_height="wrap_content"
+            android:text="Circle" />
+
+        <RadioButton
+            android:id="@+id/radioRectangleA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rectangle"
+            android:layout_marginStart="16dp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/pizzaB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/shapeRadioGroupA"
+        android:text="Pizza B"
+        android:textSize="32sp" />
+
+    <EditText
+        android:id="@+id/diameterInputB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter diameter in inches"
+        android:layout_below="@+id/pizzaB"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/priceInputB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter price per square inch"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/recInputB"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/recInputB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter width of rectangle"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:layout_below="@id/diameterInputB"
+        android:layout_marginTop="16dp" />
+
+    <RadioGroup
+        android:id="@+id/shapeRadioGroupB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/priceInputB"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/radioCircleB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Circle" />
+
+        <RadioButton
+            android:id="@+id/radioRectangleB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rectangle"
+            android:layout_marginStart="16dp" />
+    </RadioGroup>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/shapeRadioGroupB"
+        android:background="@android:color/darker_gray" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        android:layout_below="@id/divider"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/resultTextA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Price A: "
+        android:layout_below="@id/calculateButton"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/resultTextB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Price B: "
+        android:layout_below="@id/resultTextA"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/finalChoice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Final Choice: "
+        android:layout_below="@id/resultTextB"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

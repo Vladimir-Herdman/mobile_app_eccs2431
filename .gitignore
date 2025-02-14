@@ -1,8 +1,7 @@
-.DS_Store
-mipmap-anydpi-v26/
-mipmap-hdpi/
-mipmap-mdpi/
-mipmap-xhdpi/
-mipmap-xxhdpi/
-mipmap-xxxhdpi/
-xml/
+**/.DS_Store
+**/.gradle/
+**/build/
+**/.idea/
+**/local.properties
+**/push_git.sh
+**/pull_git.sh
